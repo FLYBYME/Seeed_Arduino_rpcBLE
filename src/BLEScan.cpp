@@ -88,7 +88,7 @@ BLEScanResults BLEScan::start(uint32_t duration, bool is_continue) {
 		ble_start();
 	}
 	if(start(duration, nullptr, is_continue)) {
-		m_semaphoreScanEnd.wait("start");   // Wait for the semaphore to release.
+		//m_semaphoreScanEnd.wait("start");   // Wait for the semaphore to release.
 	}
 	return m_scanResults;
 } // start
